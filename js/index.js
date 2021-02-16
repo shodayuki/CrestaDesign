@@ -1,11 +1,7 @@
 $(function(){
-  $(".header__hamburgerIcon").click(function() {
-    $(this).toggleClass("is-active");
-
-    if ($(this).hasClass("is-active")) {
-      $(".header__hamburgerWrap").addClass("is-active");
-    } else {
-      $(".header__hamburgerWrap").removeClass("is-active");
-    }
+  $('.header__burger-btn').on('click', function () {
+    $('.header__nav').fadeToggle(300);
+    $('.header__burger-btn').toggleClass('cross');
+    $('body').toggleClass('noscroll');
   });
 });
