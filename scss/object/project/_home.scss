@@ -292,3 +292,39 @@
   font-size: 2rem;
   margin-bottom: 40px;
 }
+
+/* ---------------------------- */
+/* js
+/* ---------------------------- */
+.jsc-fadein-text {
+  opacity: 0;
+  transition: all 2s cubic-bezier(.77, 0, .175, 1) 1s;
+  transform: translate(50px, 0);
+
+  &.is-active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slick-slide img {
+  opacity: 0;
+  transition: all 2s cubic-bezier(.77, 0, .175, 1) 0s;
+  transform: translate(50px, 0);
+
+  &.is-active {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.jsc-fadeup {
+  opacity: 0;
+  transition: all 2s;
+  transform: translate(0, 50px);
+
+  &.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

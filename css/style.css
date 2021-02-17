@@ -713,6 +713,42 @@ header
 }
 
 /* ---------------------------- */
+/* js
+/* ---------------------------- */
+.jsc-fadein-text {
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+  transform: translate(50px, 0);
+}
+
+.jsc-fadein-text.is-active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.slick-slide img {
+  opacity: 0;
+  transition: all 2s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+  transform: translate(50px, 0);
+}
+
+.slick-slide img.is-active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.jsc-fadeup {
+  opacity: 0;
+  transition: all 2s;
+  transform: translate(0, 50px);
+}
+
+.jsc-fadeup.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ---------------------------- */
 /* page-title
 /* ---------------------------- */
 .page-title-wrapper {
