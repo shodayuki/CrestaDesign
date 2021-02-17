@@ -1,0 +1,17 @@
+@import "../../foundation/var";
+
+.sp-br {
+  display: none;
+
+  @include mq(sp){
+    display: block;
+  }
+}
+
+.pc-br {
+  display: block;
+
+  @include mq(sp){
+    display: none;
+  }
+}

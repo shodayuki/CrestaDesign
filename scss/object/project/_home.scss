@@ -1,1 +1,294 @@
 @import "../../foundation/var";
+
+/* ---------------------------- */
+/* fv
+/* ---------------------------- */
+.fv {
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    height: 100vh;
+    min-height: 100%;
+  }
+}
+
+.main-copy {
+  position: absolute;
+  left: 120px;
+  bottom: 177px;
+  color: $colorWhite;
+
+  @include mq(sp){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+  }
+}
+
+.en-copy {
+  font-size: 7rem;
+  margin-bottom: 31px;
+  font-weight: bold;
+
+  @include mq(sp){
+    font-size: 9.8vw;
+  }
+}
+
+.jp-copy {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+
+  @include mq(sp){
+    font-size: 8vw;
+  }
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+/* ---------------------------- */
+/* Section
+/* ---------------------------- */
+.section-wrapper {
+  padding: 100px 0 70px;
+
+  @include mq(sp){
+    padding: 100px 0 40px;
+  }
+}
+
+.section-title {
+  max-width: 1000px;
+  color: #282f35;
+  font-size: 6rem;
+  font-style: italic;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+
+  @include mq(sp){
+    padding: 0 4vw;
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+
+  &::after{
+    content: "";
+    display: inline-block;
+    background-color: #282f35;
+    width: 200px;
+    height: 5px;
+    margin-left: 30px;
+    vertical-align: middle;
+
+    @include mq(sp){
+      width: 90px;
+    }
+  }
+
+  &.text-white {
+    &::after {
+      background-color: $colorWhite;
+    }
+  }
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  @include mq(sp){
+    padding: 0 4vw;
+  }
+}
+
+.section-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 9rem;
+  opacity: 0.05;
+
+  @include mq(sp){
+    font-size: 4rem;
+    padding: 0 4vw;
+  }
+
+  &.text-white {
+    opacity: 0.1;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: $colorWhite;
+}
+
+/* ---------------------------- */
+/* concept
+/* ---------------------------- */
+.concept-lead {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+  line-height: 1.67;
+
+  @include mq(sp){
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+}
+
+.concept-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+
+  @include mq(sp){
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.concept-text {
+  max-width: 440px;
+  line-height: 1.87;
+  font-weight: bold;
+
+  @include mq(sp){
+    margin-bottom: 30px;
+  }
+}
+
+.concept-img-wrapper {
+  width: 44%;
+  margin-left: 20px;
+
+  @include mq(sp){
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* ---------------------------- */
+/* works
+/* ---------------------------- */
+.bg-works {
+  background-image: url(#{$bgPath}works-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.works-list {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+
+  @include mq(sp){
+    display: block;
+    padding: 0 4vw;
+    margin-bottom: 80px;
+  }
+}
+
+.works-item {
+  width: 32%;
+  background-color: $colorWhite;
+
+  @include mq(sp){
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  a {
+    color: #141414;
+    text-decoration: none;
+  }
+}
+
+.works-list-text {
+  padding: 25px 20px;
+}
+
+/* ---------------------------- */
+/* service
+/* ---------------------------- */
+.service-list {
+  display: flex;
+
+  @include mq(sp){
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.service-item {
+  width: 33.3%;
+
+  @include mq(sp){
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: $colorWhite;
+    line-height: 320px;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.3s;
+
+    @include mq(sp){
+      line-height: 250px;
+    }
+
+    &:hover {
+      background-color: rgba(40,47,53,0.7);
+      transition: 0.3s;
+    }
+  }
+
+  &.service_1 {
+    background-image: url(#{$bgPath}service-img01@2x.jpg);
+  }
+
+  &.service_2 {
+    background-image: url(#{$bgPath}service-img02@2x.jpg);
+  }
+
+  &.service_3 {
+    background-image: url(#{$bgPath}service-img03@2x.jpg);
+  }
+}
+
+/* ---------------------------- */
+/* contact
+/* ---------------------------- */
+.bg-contact {
+  background-image: url(#{$bgPath}contact-bgi@2x.jpg);
+}
+
+.contact-text {
+  text-align: center;
+  color: $colorWhite;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}

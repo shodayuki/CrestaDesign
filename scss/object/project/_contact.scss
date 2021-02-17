@@ -6,7 +6,7 @@
 .page-title-wrapper {
   height: 453px;
   position: relative;
-  background-image: url(../images/contact-page-bgi@2x.jpg);
+  background-image: url(#{$bgPath}contact-page-bgi@2x.jpg);
 }
 
 .page-title {
@@ -15,12 +15,12 @@
   font-style: italic;
   text-align: center;
   padding-top: 186px;
-  color: #FFF;
+  color: $colorWhite;
 }
 
 .page-title-bottom {
   font-size: 9rem;
-  color: #FFF;
+  color: $colorWhite;
   opacity: 0.1;
   margin: 20px 0 0 48px;
 }

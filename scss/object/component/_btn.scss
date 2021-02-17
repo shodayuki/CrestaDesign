@@ -1,0 +1,25 @@
+@import "../../foundation/var";
+
+.link-btn {
+  display: block;
+  width: 235px;
+  line-height: 60px;
+  margin: 0 auto 70px;
+  background-color: #f7d43f;
+  box-shadow: 0 0 6px #1b1310;
+  border-radius: 30px;
+  text-align: center;
+  color: #171717;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+
+  @include mq(sp){
+    margin-bottom: 40px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+}

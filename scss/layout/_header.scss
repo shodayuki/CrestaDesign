@@ -45,7 +45,7 @@ header
   }
 
   a {
-    color: #FFF;
+    color: $colorWhite;
     text-decoration: none;
     transition: 0.3s;
     font-weight: bold;
@@ -65,7 +65,7 @@ header
     margin: 0 auto;
   }
 
-  &.fixed {
+  &.is-fixed {
     position: fixed;
     background-color: #282f35;
     padding: 30px;
@@ -163,7 +163,7 @@ header
       display: block;
       height: 3px;
       width: 30px;
-      background-color: #FFF;
+      background-color: $colorWhite;
     }
   }
 }
